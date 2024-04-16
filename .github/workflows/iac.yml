@@ -23,5 +23,5 @@ jobs:
           subscriptionId: ${{ secrets.AZURE_SUBSCRIPTION }}
           resourceGroupName: ${{ secrets.AZURE_RG }}
           template: ./resource-groups/main.bicep
-          parameters: ./resource-groups/main.bicepparam
+          parameters: name=rg-jb-test1 location=UK South
           failOnStdErr: false
