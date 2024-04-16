@@ -25,4 +25,4 @@ jobs:
           template: ./resource-groups/main.bicep
           parameters: name=rg-jb-test1 location=UK South
           failOnStdErr: true
-          region: "UK South"
+          region: uksouth
