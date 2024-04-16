@@ -19,10 +19,10 @@ jobs:
       - name: Deploy Bicep file
         uses: azure/arm-deploy@v2
         with:
-          scope: subscription
+          scope: resourcegroup
           subscriptionId: ${{ secrets.AZURE_SUBSCRIPTION }}
           resourceGroupName: ${{ secrets.AZURE_RG }}
-          template: ./resource-groups/main.bicep
-          parameters: name=rg-jb-test1 location=uksouth
+          template: ./app-services/main.bicep
+          parameters: sku=F1
           failOnStdErr: true
           region: uksouth
