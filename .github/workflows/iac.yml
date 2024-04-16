@@ -24,4 +24,5 @@ jobs:
           resourceGroupName: ${{ secrets.AZURE_RG }}
           template: ./resource-groups/main.bicep
           parameters: name=rg-jb-test1 location=UK South
-          failOnStdErr: false
+          failOnStdErr: true
+          region: UK South
